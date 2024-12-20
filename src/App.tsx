@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import KeyboardScene from "./components/KeyboardScene/KeyboardScene";
+import TypingGame from "./components/TypingGame/TypingGame";
 
 function App() {
   const [keyPressed, setKeyPressed] = useState<string | null>(null);
@@ -28,6 +29,7 @@ function App() {
   return (
     <div style={{ height: "100vh", width: "100%" }}>
       <KeyboardScene keyPressed={keyPressed} />
+      <TypingGame />
     </div>
   );
 }
